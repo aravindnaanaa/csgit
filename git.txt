@@ -1,0 +1,22 @@
+git clone <url>
+git add <filename>
+git commit -m "Message"
+git status
+git push
+git commit -am "mesage"
+git pull
+
+
+merge conflict 
+
+git log
+git reset
+
+git branch
+
+git checkout -b colorchnage
+
+git checkout main
+
+github pages/website hosting 
+username.github.io

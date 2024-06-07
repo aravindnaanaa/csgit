@@ -1,0 +1,21 @@
+%mycolor {
+    font-size: 28px;
+    border: thick;
+    padding: 20px;
+    margin: 20px;
+}
+
+#go {
+    @extend %mycolor;
+    background-color: green;
+}
+
+#earth {
+    @extend %mycolor;
+    background-color: blue;
+}
+
+#stop{
+    @extend %mycolor;
+    background-color: red;
+}

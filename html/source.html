@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Page</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="dataInput">Enter Data:</label>
+        <input type="text" id="dataInput" name="dataInput">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Get the data from the form
+            var formData = new FormData(this);
+            var dataToPass = formData.get('dataInput');
+
+            // Redirect to the destination page with the data as a URL parameter
+            window.location.href = 'destination.html?data=' + encodeURIComponent(dataToPass);
+        });
+    </script>
+</body>
+</html>

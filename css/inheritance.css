@@ -1,0 +1,23 @@
+#stop,
+#earth,
+#go {
+    font-size: 28px;
+    border: thick;
+    padding: 20px;
+    margin: 20px;
+}
+
+#go {
+    background-color: green;
+}
+
+#earth {
+    background-color: blue;
+}
+
+#stop {
+    background-color: red;
+}
+
+
+/*# sourceMappingURL=inheritance.css.map */

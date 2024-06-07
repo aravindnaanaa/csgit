@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submission</title>
+</head>
+
+<body>
+    <h2>Enter Your Information</h2>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required /><br /><br />
+
+        <label for="color">Favorite Color:</label>
+        <select id="color" name="color" required>
+        <option value="">Choose a color</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option></select
+      ><br /><br />
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+      function submitForm() {
+        var formData = new FormData(document.getElementById('myForm'))
+
+        // Create a new window to display the submitted data
+        var displayWindow = window.open(
+          '',
+          'Submitted Data',
+          'width=400,height=300'
+        )
+        var displayHTML = '<!DOCTYPE html>'
+        displayHTML += "<html lang='en'>"
+        displayHTML += '<head>'
+        displayHTML += "<meta charset='UTF-8'>"
+        displayHTML +=
+          "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        displayHTML += '<title>Submitted Data</title>'
+        displayHTML += '</head>'
+        displayHTML += '<body>'
+        displayHTML += '<h2>Submitted Data</h2>'
+        displayHTML += '<div>'
+        displayHTML +=
+          '<p><strong>Name:</strong> ' + formData.get('name') + '</p>'
+        displayHTML +=
+          '<p><strong>Age:</strong> ' + formData.get('age') + '</p>'
+        displayHTML +=
+          '<p><strong>Favorite Color:</strong> ' +
+          formData.get('color') +
+          '</p>'
+        displayHTML += '</div>'
+        displayHTML += '</body>'
+        displayHTML += '</html>'
+
+        displayWindow.document.write(displayHTML)
+      }
+    </script>
+  </body>
+</html>

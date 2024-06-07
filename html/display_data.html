@@ -1,0 +1,17 @@
+<!-- display_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h2>Submitted Data</h2>
+    <div>
+        <p><strong>Name:</strong> <?php echo htmlspecialchars($_POST["name"]); ?></p>
+        <p><strong>Age:</strong> <?php echo htmlspecialchars($_POST["age"]); ?></p>
+        <p><strong>Favorite Color:</strong> <?php echo htmlspecialchars($_POST["color"]); ?></p>
+    </div>
+</body>
+</html>
