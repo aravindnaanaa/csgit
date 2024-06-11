@@ -3,47 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Form with Curved Input</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .form-container {
-            text-align: center;
-        }
-        .curved-input {
-            border: 1px solid #ccc; /* Light gray border */
-            border-radius: 15px;    /* Adjust the radius value to make corners more or less rounded */
-            padding: 10px;          /* Padding inside the input */
-            width: 200px;           /* Width of the input field */
-            font-size: 16px;        /* Font size of the input text */
-            margin-bottom: 10px;    /* Space between the input and the button */
-        }
-        button {
-            padding: 10px 20px;     /* Padding for the button */
-            font-size: 16px;        /* Font size of the button text */
-            border: none;           /* Remove default border */
-            border-radius: 5px;     /* Rounded corners for the button */
-            background-color: #007BFF; /* Button background color */
-            color: white;           /* Button text color */
-            cursor: pointer;        /* Pointer cursor on hover */
-        }
-        button:hover {
-            background-color: #0056b3; /* Darker background color on hover */
-        }
-    </style>
+    <title>Search Bar Layout</title>
+    <link rel="stylesheet" href="ck.css">
 </head>
 <body>
-    <div class="form-container">
-        <form action="https://www.google.com/search" method="GET">
-            <input type="text" name="q" class="curved-input" placeholder="Search...">
-            <br>
-            <button type="submit">Google Search</button>
+    <div class="search-container">
+        <div class="logo-container">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" id="google-logo">
+            <span class="logo-text">image</span>
+        </div>
+        <form id="search-form" action="/search" method="GET">
+            <input type="text" id="gsearch" name="query" placeholder="Search...">
+            <div id="butt">
+                <input type="submit" class="search-button" value="Google Search">
+                <button type="button" class="search-button">I'm Feeling Lucky</button>
+            </div>
         </form>
     </div>
 </body>

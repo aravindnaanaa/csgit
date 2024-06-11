@@ -2,16 +2,28 @@
 <html>
 
 <head>
-    <title>Google</title>
+    <title>Google Image</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div>
+    <div class="linking">
+        <a href="index.html">Google</a>
+        <a href="googleadvanved.html">Google Advanced</a>
+    </div>
+    <div id="main">
+        <div class="logo-container">
+        <img src="/Users/naanaa/Desktop/2024cs/csgit/assignment/AS1/image/googlelogo.png" alt="Google Logo" id="google-logo">
+        <span class="logo-text">image</span>
+        </div>
         <form action="https://www.google.com/search" method="GET">
-         <input type="text" name="q">
+         <input id="gsearch" type="text" name="q">
+
          <input type="hidden" name="sclient"value="img" >
          <input type="hidden" name="udm" value="2">
-         <button type="submit">Google Image Search</button>
+         <div id="Butt" >
+         <button id="inp" type="submit">Google Image Search</button>
+         </div>
         </form>
     </div>
 </body>

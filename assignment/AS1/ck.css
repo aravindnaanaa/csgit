@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(197, 233, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    position: relative;
+    margin-bottom: 20px; /* Adds space between the logo and the search bar */
+}
+
+#google-logo {
+    width: 272px; /* Fixed width */
+    height: 92px; /* Fixed height */
+}
+
+.logo-text {
+    position: absolute;
+    bottom: 0px; /* Adjust as needed to position the text vertically */
+    left: 225px; /* Adjust as needed to position the text horizontally */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #000; /* Adjust text color as needed */
+}
+
+#search-form {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#gsearch {
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#butt {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e8e8e8;
+}
