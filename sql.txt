@@ -1,0 +1,34 @@
+touch flights.spl
+touch flights.sqlite3
+sqlite3 flights.sql 
+sqlite3 flights.sqlite3
+
+
+create table flights(
+    id integer primary key autoincrement,
+    origin text not null,
+    destination text not null,
+    duration integer not null);
+
+.tables
+
+select * from flights;
+
+insert into flights (origin, destination, duration) values ("newyork","london", 417);
+
+.mode column 
+.headers yes
+
+
+update flights
+set duration = 430 where origin = "newyork" and destination = "london";
+
+delete
+
+foreign key
+airport table, flight table
+join
+create INDEX
+sql injuction 
+race condition
+
